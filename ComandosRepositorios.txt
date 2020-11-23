@@ -69,3 +69,7 @@ git fetch: Lo usamos para traer actualizaciones del servidor remoto y guardarlas
 git merge: También usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
 git pull: Básicamente, git fetch y git merge al mismo tiempo.
 
+git commit -am [escriver versión de lo guardado]
+git branch NombreDeBranch
+git checkout cabecera       Es para cabiar el HEAD o apuntador o cursos donde estás trabajando
+add NOmbreArchivo.extension         para agregar los cambios 
