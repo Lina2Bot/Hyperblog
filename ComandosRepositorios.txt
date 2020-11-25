@@ -197,4 +197,7 @@ git push origin --tags
         BORRAR TAG DE GITHUB
         git push origin :refs/tags/error
 
-ENVIAR DIFERENTES RAMAS AL SERVIDOR/GITHUB
+MANEJO DE DIFERENTES RAMAS AL SERVIDOR/GITHUB
+git show-branch
+git show-branch --all
+gitk    para abrir el programa y viualizar la historia de tu archivo
