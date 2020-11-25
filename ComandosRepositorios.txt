@@ -156,3 +156,45 @@ Host *
 # computadora (en caso de error puedes ejecutar este
 # mismo comando pero sin el argumento -K):
 ssh-add -K ruta-donde-guardaste-tu-llave-privada
+
+
+PARA VISUALIZAR HISTORICO DE proyecto
+git log
+git log --all
+git log --all --graph
+git log --all --graph --decorate --oneline
+
+Para comandos muy largos se puede poner actualizaciones
+alias arbolito="git log --all --graph --decorate --oneline"
+
+
+TAGS        para cuando trabajes en versiones 2.0, 2.3.4 etc. 
+git tag -a v0.1 -m "Resultado de las primeras clases del curso" e62023e  ]---> este número sale en el git log 
+git tag     visualizar todos los tags guardados
+git show-ref --tags     para saber a que hash o commit está conectado a determinado tag 
+
+primero haces un pull
+git pull origin main
+
+git push origin --tags 
+
+    SI CREAMOS UN commit POR ERROR
+    arbolito        para buscar el id del commit
+    git tag -a error -m "me distraje..."
+    git push origin --tags
+
+    BORRAR TAG
+    git tag -d NombreTAG
+    git status  para VERIFICAR
+    git pull origin main    por buena practica para actualizar lo que esta en internet
+    git push origin --tags      para subirlo a internet con tag borrado
+
+        Si te vas a GitHub el taga va a seguir apareciendo, porque los tags se pueden usar como realises. 
+        entonces borras de manera especial
+
+        git tag     Verificas que de manra local ya no este
+        
+        BORRAR TAG DE GITHUB
+        git push origin :refs/tags/error
+
+ENVIAR DIFERENTES RAMAS AL SERVIDOR/GITHUB
