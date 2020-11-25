@@ -74,3 +74,46 @@ git branch NombreDeBranch       para crear rama
 git branch      para ver en que rama estas
 git checkout cabecera       Es para cabiar el HEAD o apuntador o cursos donde estás trabajando
 add NOmbreArchivo.extension         para agregar los cambios 
+
+PARA TRAER DEL GITHUB AL LOCAL 
+git remote add origin url guardar la URL del repositorio de GitHub con el nombre de origin
+git remote      verifircar que la URL se haya guardado correctamente
+git remote -v   "" y v de manera verbal
+git pull origin main
+git pull origin main --allow-unrelated-histories      traer la version del repositorio remoto y hacer merge para crear un commit con losarchivos de ambas partes. Podemos usar git fetch y git merge o solo esta opcion
+
+    Esto va a crear una rama master no va a actualizar a la MAIN es decir tendras dos ramas
+git push origin master          guardar los camios de nestro reositorio local a GitHub. pero me crea una rama o branch llamada master, no lo guarda en main
+git push --set-upstream origin master      hace otra rama
+
+PARA NO HACER LO ANTERIOR SEGUIR 
+    git branch -M main y git push -u origin main
+
+Crear un nuevo repositorio on la línea de comandos
+echo "# master" >> README.md 
+git init
+git add README.md 
+git commit -m "primer commit"
+git branch -M main
+git remote add origin URL
+git push -u origin main
+
+Para mandar repositorio local a GitHub
+git remote add origin URL
+git branch -M main
+git push -u origin main
+
+git remote add origin URL
+git remote
+git remote -v 
+git branch -M main (esto es para que te coloque en main y no te haga una segunda rama llamada master)
+git push -u origin main
+    No los deja porque son 
+    repositorios diferentes entonces:
+git pull origin main 
+siguen sin dejarlos 
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+
+
+git remote rm origin
