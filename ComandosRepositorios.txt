@@ -266,4 +266,31 @@ git cheackout header
 git checkout footer     pare ver lo que hizo la otra personalizados
 
   Lo que hizo la otra persona
-  
+  pwd     
+git status    esta en rama main
+git pull origin footer  
+git checkout footer
+    para checar
+        git status
+        git branch
+        ls -al
+vim nombreArchivo   se editará en consola
+    para entrar al menú preciona ESC 
+        comando + ENTER
+        comandos a usar:
+            :q
+            :q!
+            :w
+            :wq
+            :x
+    Si tarabajas en distintos navegadores MAC y WINDOWS 
+    normalmente los acentos aparecen raros, este problema se llama
+    es porque es estandar de tildes es distintos
+    proble conocido como UNIQUECODE o UTF-8
+        esto está en el curso de fundamentos de software en Platzi
+
+    Editamos el css por medio de vim con ruta relativa desde carpeta
+
+    git status
+git pull/push origin footer
+Revisar repositorio GitHub
