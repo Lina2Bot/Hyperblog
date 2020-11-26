@@ -19,7 +19,7 @@ git commit -m "Cambio1"
 git rm NombreArchivo.extensión para borrar el archivo 
 git rm --cached NombreArchivo.extensión
 git config
-git config --list
+git config --list o git config -l
 git config --list --show.origin
 cat NombreArchivo.extensión
 git log
@@ -201,3 +201,31 @@ MANEJO DE DIFERENTES RAMAS AL SERVIDOR/GITHUB
 git show-branch
 git show-branch --all
 gitk    para abrir el programa y viualizar la historia de tu archivo
+
+CONFIGURAR MULTIPLES COLABORADORES EN UN REPOSITORIO DE GITHUB
+Haces tu carpeta y no da git init, traes la info desde github
+Clonas la URL
+git clone URL       No pide usuario ni contraseña porque es un repositorio público
+vim historia.txt    este es un ejemplo para abrir y editar un documento
+git status
+git commit -am "Mi primer commit en este trabajo remoto"     porque ya sabemos qu esto esta trackeado
+git pull origin main
+git branch      para verificar que ramas trajo
+git log --graph     esto para ver el desarrolo que tuvo el proyecto
+git push origin main
+    haces el procedimiento de contraseña
+    DENY!!!!    el jefe no le dio acceso
+
+    El jefe o dueño del repositorio debe ir archivo
+    settings    del repositorio 
+        Collaborators   agregas el correo electrónico de tu colaborador este email debe ser público
+                        o bien puedes darle el nombre de su cuenta.
+    Se envia correo al colaborador y debe aceptar
+git status
+git pull origin main
+git push origin main
+    colocar usuario y password 
+
+    El jefe o los demás colaboradores deben de hacer pull y push 
+
+OJO TODO DEBE TRABAJARSE EN RAMAS PARA AL FINAL DEBE HACER MERGE
