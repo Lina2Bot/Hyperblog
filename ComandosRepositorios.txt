@@ -233,6 +233,27 @@ git push origin main
 FLUJO DE TRABAJO PROFESIONAL: HACIENDO MERGE DE RAMAS DE DESARROLO A MAIN
 
 ¡! una imagen es unn archivo binario no de texto plano
-BUENAS PRACTICAS
+  BUENAS PRACTICAS
     Los archivos binarios no se agregan al repositorio
     La main solo se envía lo que está listo para producción
+    checar cambios ARBOLITO 
+
+mkdir imagenes  +  agregas una imagen
+
+git checkout header
+arbolito
+git add nombreCarpeta/nombreArchivo.png  (png es un archivo binario)
+git status
+git commit -am "actualización"
+git pull origin nombreBranch 
+git push origin nombreBranch 
+    GitHub
+        EN GITHUB aparece un botón de Compare & pull request
+        Te diriges a la branch y aparecerá tu carpete e imagen
+  Si editas tu imagen y actualizas con git
+  no aparecerá como tal el cambio debido a q no se actualizó en caché 
+  si se ve en una pestaña incognita de google crome 
+    Si deseas forzar la actualización 
+    WINDOWS     Crtl + shift + r 
+                Ctrl + F5
+    MAC         Cmd + schift + r
