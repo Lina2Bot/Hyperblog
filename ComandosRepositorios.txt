@@ -232,4 +232,7 @@ git push origin main
 
 FLUJO DE TRABAJO PROFESIONAL: HACIENDO MERGE DE RAMAS DE DESARROLO A MAIN
 
-
+¡! una imagen es unn archivo binario no de texto plano
+BUENAS PRACTICAS
+    Los archivos binarios no se agregan al repositorio
+    La main solo se envía lo que está listo para producción
