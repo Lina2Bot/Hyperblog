@@ -257,3 +257,13 @@ git push origin nombreBranch
     WINDOWS     Crtl + shift + r 
                 Ctrl + F5
     MAC         Cmd + schift + r
+
+  Hacer cambios en header, su logo etc.
+git commit -am "Color de fondo, logo nuevo..."
+git status     checas
+git checkout main   ya no aparece la carpeta 
+git cheackout header
+git checkout footer     pare ver lo que hizo la otra personalizados
+
+  Lo que hizo la otra persona
+  
